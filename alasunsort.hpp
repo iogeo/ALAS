@@ -5,7 +5,7 @@
 
 namespace alas
 {
-	template <typename t>* unsortarray(t* arr, int c)
+	template <typename t>* void unsortarray(t* arr, int c)
 	{
 		int buffer, temp;
 		for(int ac=0; ac<c; ac++)
