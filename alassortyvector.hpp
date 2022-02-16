@@ -24,7 +24,7 @@ namespace alas
 			{
 				if(size)
 				{
-					int* temparray=array;
+					t* temparray=array;
 					array=new t[size*2];
 					for(int i=0; i<size; i++)
 					{
@@ -65,7 +65,7 @@ namespace alas
 		{
 			if(maxsize)
 			{
-				int* temparray=array;
+				t* temparray=array;
 				array=new t[a];
 				for(int i=0; i<size; i++)
 				{
@@ -98,7 +98,7 @@ namespace alas
 		}
 		void shrink_to_fit()
 		{
-			int* temparray=array;
+			t* temparray=array;
 			array=new t[size];
 			for(int i=0; i<size; i++)
 			{
