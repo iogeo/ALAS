@@ -5,10 +5,10 @@ namespace alas
 {
 	template <typename t> class sortyvector
 	{
-		public:
 		t* array;
 		int size;
 		int maxsize;
+		public:
 		sortyvector()
 		{
 			size=0;
@@ -106,6 +106,14 @@ namespace alas
 			}
 			delete[] temparray;
 			maxsize=size;
+		}
+		t get(int a)
+		{
+			return array[a];
+		}
+		int getsize()
+		{
+			return size;
 		}
 	};
 }
