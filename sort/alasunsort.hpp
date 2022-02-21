@@ -11,7 +11,7 @@ namespace alas
 		for(int ac=0; ac<c; ac++)
 		{
 			buffer=arr[ac];
-			temp=std::rand()%(c-ac);
+			temp=std::rand()*std::rand()%(c-ac);
 			arr[ac]=arr[ac+temp];
 			arr[ac+temp]=buffer;
 		}
