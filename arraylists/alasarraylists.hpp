@@ -42,7 +42,6 @@ namespace alas
 		public:
 		arraylistelement<t>* base;
 		t** originalarrays;
-		t*** dependantarrays;
 		int arraycount;
 		int originalarraycount;
 		int originalarraymaxcount;
@@ -72,13 +71,7 @@ namespace alas
 				if(originalarraycount==originalarraymaxcount)
 				{
 					t** buffer2=originalarrays;
-					t*** buffer3=dependantarrays;
 					originalarrays=new t*[originalarraycount*2];
-					dependantarrays=new t**[originalarraycount*2];
-					for(int i=0; i<originalarraycount; i++)
-					{
-						originalarrays[i]=buffer2[i];
-					}
 					for(int i=0; i<originalarraycount; i++)
 					{
 						originalarrays[i]=buffer2[i];
